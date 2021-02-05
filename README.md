@@ -21,6 +21,8 @@
     - [CLI: Command Line Interface](2-aws-deep-dive/cli.md)
     - [SDK: Software Development Kit](2-aws-deep-dive/sdk.md)
     - [Elastic Beanstalk](2-aws-deep-dive/elastic-beanstalk.md)
+    - [Docker in AWS](2-aws-deep-dive/docker-in-aws/docker.md)
+        - [Elastic Container Service](2-aws-deep-dive/docker-in-aws/ecs.md)
     - [CICD: Continuous Integration and Deployment](2-aws-deep-dive/cicd/cicd.md)
         - [CodeCommit](2-aws-deep-dive/cicd/codecommit.md)
         - [CodePipeline](2-aws-deep-dive/cicd/codepipeline.md)
@@ -43,11 +45,6 @@
   - [Cognito](3-aws-serverless/cognito.md)
   - [Step Functions](3-aws-serverless/stepfunctions.md)
   - [AppSync](3-aws-serverless/appsync.md)
-
-- Docker based AWS services
-  - ECS: Elastic Container Service
-  - Elastic Container Registry
-  - Fargate
 
 - [Exam Preperation](#exam-preparation)
 
