@@ -23,6 +23,7 @@
     - [Elastic Beanstalk](2-aws-deep-dive/elastic-beanstalk.md)
     - [Docker in AWS](2-aws-deep-dive/docker-in-aws/docker.md)
         - [Elastic Container Service](2-aws-deep-dive/docker-in-aws/ecs.md)
+        - [Elastic Container Registry](2-aws-deep-dive/docker-in-aws/ecr.md)
     - [CICD: Continuous Integration and Deployment](2-aws-deep-dive/cicd/cicd.md)
         - [CodeCommit](2-aws-deep-dive/cicd/codecommit.md)
         - [CodePipeline](2-aws-deep-dive/cicd/codepipeline.md)
@@ -46,7 +47,7 @@
   - [Step Functions](3-aws-serverless/stepfunctions.md)
   - [AppSync](3-aws-serverless/appsync.md)
 
-- [Exam Preperation](#exam-preparation)
+- [Exam Preparation](#exam-preparation)
 
 
 ## Exam Preparation
