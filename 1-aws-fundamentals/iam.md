@@ -7,13 +7,14 @@ When accessing AWS, the root account should **never** be used. Users must be cre
 - Policies (JSON documents): Defines what each of the above can and cannot do. **Note**: IAM has predefined managed policies.
 
 
-#### For big enterprises:
+### For big enterprises:
+
 - IAM Federation: Integrate their own repository of users with IAM using SAML standard
 
-### Policies
-IAM policies define permissions for an action regardless of the method that you use to perform the operation.
+## Policies
+- IAM policies define permissions for an action regardless of the method that you use to perform the operation.
 
-#### Policy types
+### Policy types
 - Identity-based policies
   - Attach managed and inline policies to IAM identities (users, groups to which users belong, or roles). Identity-based policies grant permissions to an identity.
 
@@ -32,7 +33,8 @@ IAM policies define permissions for an action regardless of the method that you 
 - Session policies
   - Pass advanced session policies when you use the AWS CLI or AWS API to assume a role or a federated user. Session policies limit the permissions that the role or user's identity-based policies grant to the session. Session policies limit permissions for a created session, but do not grant permissions. For more information, see Session Policies.
 
-#### AWS Policy Simulator
+### AWS Policy Simulator
+
 - When creating new custom policies you can test it here:
   - https://policysim.aws.amazon.com/home/index.jsp
   - This policy tool can you save you time in case your custom policy statement's permission is denied
@@ -41,7 +43,8 @@ IAM policies define permissions for an action regardless of the method that you 
     - If the command is successful, you'll get the message: `Request would have succeeded, but DryRun flag is set`
     - Otherwise, you'll be getting the message: `An error occurred (UnauthorizedOperation) when calling the {policy_name} operation`
   
-#### Best practices:
+## Best practices
+
 - One IAM User per person **ONLY**
 - One IAM Role per Application
 - IAM credentials should **NEVER** be shared
