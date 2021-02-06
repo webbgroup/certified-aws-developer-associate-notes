@@ -41,32 +41,29 @@
 - [YAML](2-aws-deep-dive/yaml.md)
 
 - [AWS Serverless](3-aws-serverless/serverless.md)
-  - [Lambda](3-aws-serverless/lambda.md)
-  - [DynamoDB](3-aws-serverless/dynamodb.md)
-  - [API Gateway](3-aws-serverless/apigateway.md)
-  - [SAM](3-aws-serverless/sam.md)
-  - [Cognito](3-aws-serverless/cognito.md)
-  - [Step Functions](3-aws-serverless/stepfunctions.md)
-  - [AppSync](3-aws-serverless/appsync.md)
+    - [Lambda](3-aws-serverless/lambda.md)
+    - [DynamoDB](3-aws-serverless/dynamodb.md)
+    - [API Gateway](3-aws-serverless/apigateway.md)
+    - [SAM](3-aws-serverless/sam.md)
+    - [Cognito](3-aws-serverless/cognito.md)
+    - [Step Functions](3-aws-serverless/stepfunctions.md)
+    - [AppSync](3-aws-serverless/appsync.md)
 
 - Advanced Security
-  - [STS: Security Token Service](4-aws-security/sts.md)
-  - [Advanced IAM](4-aws-security/advanced-iam.md)
-  - [Active Directories](4-aws-security/active-directories.md)
-  - [Encryption](4-aws-security/encryption.md)
-  - [KMS: Key Management Service](4-aws-security/kms.md)
-  - [S3 Advanced Security](4-aws-security/s3-advanced-security.md)
-  - [SSM Parameter Store](4-aws-security/ssm.md)
-  - [Secrets Manager](4-aws-security/secrets-manager.md)
-  - [CloudWatch Logs Encryption, CodeBuild Security](4-aws-security/other.md)
+    - [STS: Security Token Service](4-aws-security/sts.md)
+    - [Advanced IAM](4-aws-security/advanced-iam.md)
+    - [Active Directories](4-aws-security/active-directories.md)
+    - [Encryption](4-aws-security/encryption.md)
+    - [KMS: Key Management Service](4-aws-security/kms.md)
+    - [S3 Advanced Security](4-aws-security/s3-advanced-security.md)
+    - [SSM Parameter Store](4-aws-security/ssm.md)
+    - [Secrets Manager](4-aws-security/secrets-manager.md)
+    - [CloudWatch Logs Encryption, CodeBuild Security](4-aws-security/other.md)
 
 - Other Services
-  - [AWS Certificate Manager](5-aws-other-services/acm.md)
-  - [Databases Summary](5-aws-other-services/databases.md)
-  - [Simple Email Service](5-aws-other-services/ses.md)
-
-- [Exam Preparation](#exam-preparation)
-
+    - [AWS Certificate Manager](5-aws-other-services/acm.md)
+    - [Databases Summary](5-aws-other-services/databases.md)
+    - [Simple Email Service](5-aws-other-services/ses.md)
 
 ## Exam Preparation
 
@@ -86,15 +83,15 @@
         - [Certified Developer - Associate Exam PDF](https://d1.awsstatic.com/training-and-certification/docs-dev-associate/AWS_Certified_Developer_Associate-Exam_Guide_EN_1.4.pdf)
 
 - EC2 + IAM Exam Checklist
-  * Know how to SSH into EC2 (and change .pem file permissions) 
-  * Know how to properly use security groups 
-  * Know the fundamental differences between private vs public vs elastic IP 
-  * Know how to use User Data to customize your instance at boot time 
-  * Know that you can build custom AMI to enhance your OS 
-  * EC2 instances are billed by the second and can be easily created and thrown away, welcome to the cloud! 
-  Maybe on Exam:
-  * Availability zones are in geographically isolated data centers
-  * IAM users are NOT defined on a per-region basis
-  * If you are getting a permission error exception when trying to SSH into your linux instance, then the key is missing chmod 400 permissions
-  * If you are getting a network timeout when trying to SSH into your EC2 instance, then your security groups are misconfigured
-  * Security groups reference IP address, CIDR block, Security group, but NOT DNS name
+    - Know how to SSH into EC2 (and change .pem file permissions) 
+    - Know how to properly use security groups 
+    - Know the fundamental differences between private vs public vs elastic IP 
+    - Know how to use User Data to customize your instance at boot time 
+    - Know that you can build custom AMI to enhance your OS 
+    - EC2 instances are billed by the second and can be easily created and thrown away, welcome to the cloud! 
+- Maybe on Exam:
+    - Availability zones are in geographically isolated data centers
+    - IAM users are NOT defined on a per-region basis
+    - If you are getting a permission error exception when trying to SSH into your linux instance, then the key is missing chmod 400 permissions
+    - If you are getting a network timeout when trying to SSH into your EC2 instance, then your security groups are misconfigured
+    - Security groups reference IP address, CIDR block, Security group, but NOT DNS name
