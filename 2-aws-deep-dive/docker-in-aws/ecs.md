@@ -116,7 +116,7 @@
 
 - **memberOf**: place a task on instances that satisfy an expression. Expressions are provided using Cluster Query Language
 
-    ``
+    ```
     "placementConstraints": [
         {
             "expression": "attribute:ecs.instance-id =~ t2.*",
