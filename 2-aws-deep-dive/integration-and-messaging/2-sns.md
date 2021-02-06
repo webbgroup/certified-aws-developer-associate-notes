@@ -16,6 +16,7 @@ SNS is a fully managed messing service for both application to application (A2A)
     - SMS text messages
 
 ## SNS integrates with most AWS Services
+
 - AWS Services can send data directly to SNS for generating notifications:
     - CloudWatch (for alarms)
     - Auto Scaling Groups
@@ -23,6 +24,7 @@ SNS is a fully managed messing service for both application to application (A2A)
     - CloudFormation (for state changes)
 
 ## How to publish a Topic
+
 - Simple:
     - Create a topic
     - Create a subscription
@@ -37,6 +39,7 @@ SNS is a fully managed messing service for both application to application (A2A)
         - Amazon ADM
 
 ## Security
+
 - Encryption:
     - In-flight encryption using HTTPS API
     - At-rest encryption using KMS keys
@@ -45,6 +48,6 @@ SNS is a fully managed messing service for both application to application (A2A)
 - Access Controls: IAM policies to regulate access to the SNS API
 
 - SNS Access Policies (similar to S3 Bucket policies)
-    - Useful for mult account access to SNS topics
+    - Useful for multi-account access to SNS topics
     - Useful for allowing other services to write to an SNS topic
 
