@@ -49,6 +49,11 @@
   - [Step Functions](3-aws-serverless/stepfunctions.md)
   - [AppSync](3-aws-serverless/appsync.md)
 
+- Other Services
+  - [AWS Certificate Manager](5-aws-other-services/acm.md)
+  - [Databases Summary](5-aws-other-services/databases.md)
+  - [Simple Email Service](5-aws-other-services/ses.md)
+
 - [Exam Preparation](#exam-preparation)
 
 
