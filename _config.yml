@@ -1,4 +1,4 @@
-remote_theme: pmarsceill/just-the-docs
+theme: jekyll-theme-leap-day
 plugins:
   - jekyll-relative-links
 relative_links:
@@ -6,6 +6,6 @@ relative_links:
   collections: true
 include:
   - README.md
-layout: default
-title: AWS Developer Associate Notes
+title: AWS Certified Developer - Associate (DVA-C01) Exam Notes
+description: Notes based on Stéphane Maarek's Udemy course.
 nav_order: 4

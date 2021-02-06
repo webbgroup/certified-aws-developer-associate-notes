@@ -3,7 +3,6 @@
 ### 2021 AWS developer associate exam 
 
 ## Table of contents
-{:toc}
 
 - AWS Fundamentals
     - [IAM: Identity Access & Management](1-aws-fundamentals/iam.md)
