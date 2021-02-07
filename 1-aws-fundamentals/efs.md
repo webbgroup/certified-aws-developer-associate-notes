@@ -10,19 +10,19 @@
 - Uses NFSv4.1 protocol
 - **EFS is only compatible with Linux based AMIs!**
 - EFS has a POSIX file system (because of Linux), that has a standard file API
-- File system scales automatically, no capacity planning is required
+- The EFS file system scales automatically, no capacity planning is required
 - Encryption at rest for EFS is using KMS
 
 ## Performance & Storage Classes
 
 - EFS Scale:
-    - EFS is designed for thousands of NFS clients for reading and writing at the same time
+    - EFS is designed for thousands of NFS clients for reading and writing content at the same time
     - It provides 10+ GB/s throughput
-    - Can grow to petabyte network file system
+    - It can grow to petabyte of storage
 - Performance modes (should be set at the time of creation)
-    - **General purpose** (default): latency-sensitive uses cases (web server, CMS)
+    - **General purpose** (default): used for latency-sensitive uses cases (web server, CMS)
     - **Max I/O** - higher latency, higher throughput, recommended for highly parallel workflows (big data, media processing)
 - Storage Tiers
     - **Standard**: should be used for frequently accessed files
-    - **Infrequent Access (EFS-IA)**: should be used less frequently accessed files. Has lower price for storage, but imposes some additional costs if a file is accessed
-- EFS provides a lifecycle management feature for the files (similar to S3)/
+    - **Infrequent Access (EFS-IA)**: should be used for less frequently accessed files. Has lower price for storage, but imposes some additional costs if a file is accessed
+- EFS provides a lifecycle management feature for the files (similar to S3)
