@@ -54,7 +54,6 @@
 - About 15 health checkers will check the end-point's health
 - Health check protocols: HTTP, TCP, HTTPS (no SSL verification)
 - Can be integrated with CloudWatch
--
 
 ## Routing Policies
 
