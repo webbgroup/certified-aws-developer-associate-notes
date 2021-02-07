@@ -11,6 +11,7 @@
     - [ELB: Elastic Load Balancers](1-aws-fundamentals/elb.md)
     - [ASG: Auto Scaling Group](1-aws-fundamentals/asg.md)
     - [EBS: Elastic Block Store](1-aws-fundamentals/ebs.md)
+    - [EFS: Elastic File System](1-aws-fundamentals/efs.md)
     - [RDS: Relational Database Service](1-aws-fundamentals/rds.md)
     - [Route 53](1-aws-fundamentals/route53.md)
     - [ElastiCache](1-aws-fundamentals/elasticache.md)
