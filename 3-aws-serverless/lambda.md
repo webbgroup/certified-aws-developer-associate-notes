@@ -223,9 +223,9 @@ aws lambda invoke --function-name hello-world --cli-binary-format raw-in-base64-
     - Iterators for streams
 - Tracing with X-Ray using X-Ray SDK in code
 - Env. variables for X-Ray:
-    - **_X_AMZN_TRACE_ID**
-    - **AWS_XRAY_CONTEXT_MISSING**
-    - **AWS_XRAY_DAEMON_ADDRESS** -  X-Ray Daemon *IP_ADDRESS:PORT*
+    - **_X_AMZN_TRACE_ID**: contains the tracing header, which includes the sampling decision, trace ID, and parent segment ID. If Lambda receives a tracing header when our function is invoked, that header will be used to populate the *_X_AMZN_TRACE_ID* environment variable. If a tracing header was not received, Lambda will generate one
+    - **AWS_XRAY_CONTEXT_MISSING**: the X-Ray SDK uses this variable to determine its behavior in the event that our function tries to record X-Ray data, but a tracing header is not available. Lambda sets this value to *LOG_ERROR* by default
+    - **AWS_XRAY_DAEMON_ADDRESS**:  exposes the X-Ray daemon’s address in the following format: *IP_ADDRESS:PORT*
 
 ## Networking
 

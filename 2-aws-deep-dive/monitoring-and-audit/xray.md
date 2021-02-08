@@ -90,14 +90,14 @@
 
 ## X-Ray Write APIs
 
-- PutTraceSegments: upload a segment document to AWS X-Ray
-- PutTelemetryRecord: upload telemetry record to AWS X-Ray. Telemetry examples: SegmentsReceivedCount, SegmentRejectedCount, BackendConnectionErrors.
-- GetSamplingRules: retrieve all sampling rules (can be useful for X-Ray daemon to know when to sent segments)
-- GetSamplingTargets, GetSamplingStatisticSummaries
+- **PutTraceSegments**: upload a segment document to AWS X-Ray
+- **PutTelemetryRecord**: upload telemetry record to AWS X-Ray. Telemetry examples: SegmentsReceivedCount, SegmentRejectedCount, BackendConnectionErrors.
+- **GetSamplingRules**: retrieve all sampling rules (can be useful for X-Ray daemon to know when to sent segments)
+- **GetSamplingTargets**, GetSamplingStatisticSummaries
 
 ## X-Ray Read APIs
 
-- GetServiceGraph: main graph
-- BatchGetTraces: retrieves a list of traces specified by IDs. Each trace is a collection of segment documents originating from a single request
-- GetTraceSummaries: retrieves the IDs and annotations for traces available for a specified amount of time frame using an optional filter. To get full traces, pass the trace id to BatchGetTraces API
-- GetTraceGraph: retrieves the service graph for one or more specific trace IDs
+- **GetServiceGraph**: main graph
+- **BatchGetTraces**: retrieves a list of traces specified by IDs. Each trace is a collection of segment documents originating from a single request
+- **GetTraceSummaries**: retrieves the IDs and annotations for traces available for a specified amount of time frame using an optional filter. To get full traces, pass the trace id to BatchGetTraces API
+- **GetTraceGraph**: retrieves the service graph for one or more specific trace IDs
