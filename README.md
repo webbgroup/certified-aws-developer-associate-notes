@@ -34,6 +34,7 @@
         - [CodeDeploy](2-aws-deep-dive/cicd/codedeploy.md)
     - [CloudFormation](2-aws-deep-dive/cloudformation/cloudformation.md)
     - [CloudWatch](2-aws-deep-dive/monitoring-and-audit/cloudwatch.md)
+    - [CloudFront](2-aws-deep-dive/cloudfront.md)
     - [Integration and Messaging](2-aws-deep-dive/integration-and-messaging/0-intro.md)
         - [SQS](2-aws-deep-dive/integration-and-messaging/1-sqs.md)
         - [SNS](2-aws-deep-dive/integration-and-messaging/2-sns.md)
