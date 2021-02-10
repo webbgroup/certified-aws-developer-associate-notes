@@ -1,7 +1,8 @@
 #### CodeCommit
+
 - **Version Control** is the ability to understand changes that happened to the code over time (and possibly roll back)
 - This is enabled by using a version control system such as Git
-- A git repository can live on your machine or on a centrol online repository
+- A git repository can live on your machine or on a central online repository
 - Benefits:
     - Collaborate with a team of developers
     - Make sure the code is backed-up somewhere
@@ -53,5 +54,3 @@
         - Trigger for pull request updates (created / updated / deleted / commented)
         - Commit comment events
         - CloudWatch Event Rules goes into an SNS topic
-
-**NOTE**: As of May 31, 2019, Use the "Old Experience" UI for now as the new UI has bugs!
