@@ -81,11 +81,11 @@ aws lambda invoke --function-name hello-world --cli-binary-format raw-in-base64-
 
 ### Lambda integration with ELB (ALB)
 
-    - Used for exposing a HTTP(S) endpoint
-    - The function must be registered in a target group
-    - HTTP request is converted by the ALB to JSON and the JSON is passed to the function an input
-    - The ALB converts the lambda response back to JSON
-    - Multi-header values: by default they are disabled. When enabled HTTP headers and query string parameters that are sent with multiple values are shown as arrays within the Lambda event and response object
+- Used for exposing a HTTP(S) endpoint
+- The function must be registered in a target group
+- HTTP request is converted by the ALB to JSON and the JSON is passed to the function an input
+- The ALB converts the lambda response back to JSON
+- Multi-header values: by default they are disabled. When enabled HTTP headers and query string parameters that are sent with multiple values are shown as arrays within the Lambda event and response object
 
 ### Lambda@Edge
 
@@ -113,7 +113,7 @@ aws lambda invoke --function-name hello-world --cli-binary-format raw-in-base64-
 
 - Mainly invoked after a certain event
 - The events are placed in an internal event queue
-- Automatic retry: 3 retries: first one right after failure, second one waits 1 minute, third one after 2 minutes (exponential backoff)
+- Automatic retry: 3 retries: first one right after failure, second one waits 1 minute, third one after 2 minutes (exponential back-off)
 - Lambda function should be idempotent - in case of retries the result should be the same
 - Retries can cause duplicate log entries in CloudWatch logs
 - DQL: in case of failure after retries the lambda function can send an event to SNS or SQS
@@ -135,7 +135,7 @@ aws lambda invoke --function-name hello-world --cli-binary-format raw-in-base64-
 ```
 
 - Invocation from CloudWatch Events/EventBridge:
-    - serverless CRON job
+    - Serverless CRON job
     - CodePipeline state change
 
 - Invocation from S3 events:
@@ -265,6 +265,12 @@ aws lambda invoke --function-name hello-world --cli-binary-format raw-in-base64-
     - Cold start: in case of a new function instance, first request can take longer because of initialization
     - Provisioned concurrency initializes a requested number of execution environments so that they are prepared to respond to your function's invocations => no cold start!
     - Application Auto Scaling can manage concurrency (schedule or target utilization)
+
+### Lambda concurrency
+
+- Reserved: Reserved concurrency creates a pool of requests that can only be used by its function, and also prevents its function from using unreserved concurrency
+- Provisioned: Provisioned concurrency initializes a requested number of execution environments so that they are prepared to respond to your function's invocations
+- Estimate reserved concurrency: **the average number of requests per second multiplied by the average duration in seconds**. For example, if a Lambda function takes an average 500 ms to run with 100 requests per second, the concurrency is 50 
 
 ## External Dependencies
 
