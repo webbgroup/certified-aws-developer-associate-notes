@@ -80,9 +80,7 @@
         - Development with AWS Services: Serverless, API, SDK, & CLI
         - Refactoring: Understand all the AWS services for the best migration
         - Monitoring and Troubleshooting: CloudWAtch, CloudTrail, X-Ray
-
-    - Exam Guide:
-        - [Certified Developer - Associate Exam PDF](https://d1.awsstatic.com/training-and-certification/docs-dev-associate/AWS_Certified_Developer_Associate-Exam_Guide_EN_1.4.pdf)
+    - Exam Guide: [Certified Developer - Associate Exam PDF](https://d1.awsstatic.com/training-and-certification/docs-dev-associate/AWS_Certified_Developer_Associate-Exam_Guide_EN_1.4.pdf)
 
 - EC2 + IAM Exam Checklist
     - Know how to SSH into EC2 (and change .pem file permissions) 
