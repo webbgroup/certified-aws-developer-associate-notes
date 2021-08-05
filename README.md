@@ -1,6 +1,4 @@
-# Certified AWS Associate Developer Notes
-
-### 2021 AWS developer associate exam 
+# AWS Certified Developer – Associate (DVA-C01) Notes
 
 ## Table of contents
 
@@ -95,3 +93,14 @@
     - If you are getting a permission error exception when trying to SSH into your linux instance, then the key is missing chmod 400 permissions
     - If you are getting a network timeout when trying to SSH into your EC2 instance, then your security groups are misconfigured
     - Security groups reference IP address, CIDR block, Security group, but NOT DNS name
+
+# Credits
+
+- These notes are based on the [Ultimate AWS Certified Developer Associate 2021](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/) course by Stephane Maarek
+
+## My other AWS Certification Notes
+
+- [AWS Certified Solutions Architect – Associate (SAA-C02)](https://github.com/Ernyoke/certified-aws-solutions-architect-associate)
+- [AWS Certified SysOps – Associate (SOA-C01)](https://github.com/Ernyoke/certified-aws-sysops-associate)
+- [AWS Certified DevOps Engineer – Professional (DOP-C01)](https://github.com/Ernyoke/certified-aws-devops-professional)
+- [AWS Certified Solutions Architect – Professional (SAP-C01)](https://github.com/Ernyoke/certified-aws-solutions-architect-professional)
