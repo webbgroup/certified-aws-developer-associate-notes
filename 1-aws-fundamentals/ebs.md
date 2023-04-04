@@ -128,9 +128,6 @@ EBS Snapshots
 - Up to 16 EC2 Instances at a time
 - Must use a filesystem that is cluster-aware (not EXT4, XFS,etc) but rather (OCFS2 and GFS)
 
-
-
-
 ## EBS Volume Types - Use cases 
 
 - Big Data / Data Warehouses / Log Processing : ST1 (HDD)
