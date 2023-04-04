@@ -88,6 +88,13 @@ EBS Snapshots
 - EBS Encryption leverages keys from KMS (AES-256)
 - Copying an unencrypted snapshot allows encryption
 
+## AMI
+
+- Start an Instance and then customize it
+- Stop the Instance for data integrity
+- Build an AMI - this will also create EBS snapshots
+- Launch Instances from other AMI
+
 ## EBS vs. Instance Store
 
 - Some instance do not come with Root EBS volumes
@@ -110,6 +117,19 @@ EBS Snapshots
 - Root EBS Volumes of instances get terminated by default if the EC2 instance gets terminated. (You can disable that)
 - In some cases, it's better to externalize your RDS database so that it won't get deleted when you delete your elastic beanstalk environment
 - Elastic Beanstalk relies on CloudFormation
+
+## EBS Multi-Attach
+
+- Attach the same EBS volume to multiple EC2 instances WITHIN the same AZ
+- Each instance has full read & write permissions to the high performance volume
+- Use Case:
+  * Achieve higher application availability in clustered Linux application (ex:Terradata)
+  * Applications must manage concurrent write operations
+- Up to 16 EC2 Instances at a time
+- Must use a filesystem that is cluster-aware (not EXT4, XFS,etc) but rather (OCFS2 and GFS)
+
+
+
 
 ## EBS Volume Types - Use cases 
 

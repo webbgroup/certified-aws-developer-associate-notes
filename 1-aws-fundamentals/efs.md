@@ -22,7 +22,17 @@
 - Performance modes (should be set at the time of creation)
     - **General purpose** (default): used for latency-sensitive uses cases (web server, CMS)
     - **Max I/O** - higher latency, higher throughput, recommended for highly parallel workflows (big data, media processing)
+- Throughput Mode
+    - **Bursting** - 1 TB = 50MiB/s + burst of up to 100MiB/s
+    - **Provisioned** - set your throughput regardless of storage size, ex 1GiB/s for 1TB storage
+    - **Elastic** - automatically scales throughput up or down based on your workloads
+        * Up to 3Gibs for reads and 1 GiB/s for writes
 - Storage Tiers
     - **Standard**: should be used for frequently accessed files
     - **Infrequent Access (EFS-IA)**: should be used for less frequently accessed files. Has lower price for storage, but imposes some additional costs if a file is accessed
 - EFS provides a lifecycle management feature for the files (similar to S3)
+
+- Availability and durability
+    - Standard: Multi-AZ, great for prod
+    - One Zone: One AZ, great for dev, backup enabled by default, compatible with IA (EFS One-Zone-IA)
+- Over 90% in cost-savings
